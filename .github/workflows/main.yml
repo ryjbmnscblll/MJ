@@ -61,7 +61,7 @@ jobs:
       - name: 编译 Fabric 模组
         run: |
           cd "$PROJECT_DIR"
-          gradle build --no-daemon
+          gradle build --no-daemon --refresh-dependencies
 
       - name: 上传 JAR
         uses: actions/upload-artifact@v4
